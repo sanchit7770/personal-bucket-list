@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Personal Bucket List</h1>
+    <div class="container">
+        <div class="add-item">
+            <input type="text" id="new-item" placeholder="Add a new item...">
+            <button onclick="addItem()">Add</button>
+        </div>
+        <ul id="bucket-list">
+            <li><span class="icon">⭐</span> Learn a new language <button class="mark-completed" onclick="markCompleted(this)">Mark Completed</button> <button onclick="deleteItem(this)">Delete</button></li>
+            <li class="completed"><span class="icon">✔️</span> Visit  Taj Mahal <button onclick="deleteItem(this)">Delete</button></li>
+            <li><span class="icon">⭐</span> Go skydiving <button class="mark-completed" onclick="markCompleted(this)">Mark Completed</button> <button onclick="deleteItem(this)">Delete</button></li>
+            <li class="completed"><span class="icon">✔️</span> Run a marathon <button onclick="deleteItem(this)">Delete</button></li>
+            <li><span class="icon">⭐</span> Write a book <button class="mark-completed" onclick="markCompleted(this)">Mark Completed</button> <button onclick="deleteItem(this)">Delete</button></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
